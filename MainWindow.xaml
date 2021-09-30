@@ -1,0 +1,48 @@
+﻿<Window x:Class="cspn_013_Ethan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cspn_013_Ethan"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Mr Wilson's subs and software" HorizontalAlignment="Left" Margin="228,26,0,0" VerticalAlignment="Top" Height="33" Width="301" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Welcome order below" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton x:Name="Six" Content="Six inch" HorizontalAlignment="Left" Margin="247,77,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <RadioButton x:Name="Foot" Content="Foot Long" HorizontalAlignment="Left" Margin="436,77,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="Bread" Content="Bread" HorizontalAlignment="Left" Margin="112,115,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="Meat" Content="Meat" HorizontalAlignment="Left" Margin="278,115,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="Cheese" Content="Cheese" HorizontalAlignment="Left" Margin="441,115,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <Label x:Name="Veg" Content="Veggies" HorizontalAlignment="Left" Margin="626,115,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <RadioButton x:Name="Wheat" Content="Wheat" HorizontalAlignment="Left" Margin="95,150,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Bread"/>
+        <RadioButton x:Name="Italian" Content="Italian" HorizontalAlignment="Left" Margin="95,181,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Bread"/>
+        <RadioButton x:Name="Flat" Content="Flat Bread (+$.50)" HorizontalAlignment="Left" Margin="95,217,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Bread"/>
+        <RadioButton x:Name="Ham" Content="Ham" HorizontalAlignment="Left" Margin="259,145,0,0" VerticalAlignment="Top" GroupName="Meat" FontSize="15"/>
+        <RadioButton x:Name="Chicken" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="259,176,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Meat"/>
+        <RadioButton x:Name="MeatBall" Content="MeatBall (+$1.00)" HorizontalAlignment="Left" Margin="259,202,0,0" VerticalAlignment="Top" GroupName="Meat" FontSize="15"/>
+        <RadioButton x:Name="Steak" Content="Steak (+$1.50)" HorizontalAlignment="Left" Margin="259,235,0,0" VerticalAlignment="Top" FontSize="15" GroupName="Meat"/>
+        <CheckBox x:Name="American" Content="American (+$.25)" HorizontalAlignment="Left" Margin="455,150,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox x:Name="Swiss" Content="Swiss (+.30)" HorizontalAlignment="Left" Margin="455,183,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox x:Name="Pepper" Content="PepperJack (+$.75)" HorizontalAlignment="Left" Margin="458,211,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox x:Name="Cucumber" Content="Cucumber" HorizontalAlignment="Left" Margin="633,149,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.409,0.452"/>
+        <CheckBox x:Name="Green" Content="GreenPepper (+$.25)" HorizontalAlignment="Left" Margin="633,180,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox x:Name="Lettuce" Content="Lettuce (+$.15)" HorizontalAlignment="Left" Margin="633,205,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox x:Name="Onion" Content="RedOnion (+$.15)" HorizontalAlignment="Left" Margin="633,235,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox x:Name="All" Content="All Veggies" HorizontalAlignment="Left" Margin="633,259,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="totalLabel" Content="Total" HorizontalAlignment="Left" Margin="56,268,0,0" VerticalAlignment="Top" FontSize="15" Width="214"/>
+        <Label x:Name="Special" Content="Special FootLong/Wheat/MeatBall/American/any veggies $2.00 off!" HorizontalAlignment="Left" Margin="30,394,0,0" VerticalAlignment="Top" Width="457" FontSize="15"/>
+        <Button x:Name="Button" Content="Order" HorizontalAlignment="Left" Margin="228,350,0,0" VerticalAlignment="Top" Height="39" Width="81" FontSize="15" Visibility="Visible" Opacity="0.7" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="sandwhichLabel" Content="(your sub)" HorizontalAlignment="Left" Margin="56,303,0,0" VerticalAlignment="Top" FontSize="15" Width="564"/>
+        <Image Margin="0,0,-200,-178" Stretch="Fill" Source="pack://siteoforigin:,,,/Image1.png"/>
+        <Image Margin="878,96,-1078,-274" Stretch="Fill" Source="pack://siteoforigin:,,,/Image1.png"/>
+        <Image Margin="-54,-80,-146,-98" Stretch="Fill" Source="pack://siteoforigin:,,,/Image1.png"/>
+        <Image Margin="0,0,-100,-166" Stretch="Fill" Source="pack://siteoforigin:,,,/Image1.png"/>
+        <Image Margin="-2,-23,10,-11" Stretch="Fill" Source="pack://siteoforigin:,,,/Image1.png"/>
+
+    </Grid>
+</Window>
